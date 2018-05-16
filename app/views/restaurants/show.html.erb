@@ -1,0 +1,15 @@
+<div class="text-center">
+  <h1><%= @restaurant.name %></h1>
+  <p><%= @restaurant.address %></p>
+  <div>
+    <p><i class="fas fa-phone"></i> <%= @restaurant.phone_number %></p>
+  </div>
+  <p><i class="fas fa-utensils"></i> Food category | <%= @restaurant.category %></p>
+
+  <hr>
+
+  <%= link_to "/" do %>
+  <i class="fas fa-undo-alt"> Back to list</i>
+  <% end %>
+</div>
+

@@ -1,0 +1,14 @@
+<div class="text-center">
+  <h1>Our Restaurants</h1>
+  <ul class="list-unstyled">
+      <% @restaurants.each do |resto| %>
+      <li><%= link_to resto.name, restaurant_path(resto) %></li>
+      <% end %>
+  </ul>
+
+  <hr>
+
+  <%= link_to new_restaurant_path do %>
+  <i class="fas fa-plus-square btn btn-primary"> Add a new restaurant</i>
+  <% end %>
+</div>
